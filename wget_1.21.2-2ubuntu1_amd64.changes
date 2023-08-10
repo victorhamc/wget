@@ -1,0 +1,53 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 24 Jan 2022 12:59:00 +0100
+Source: wget
+Binary: wget wget-udeb
+Architecture: amd64
+Version: 1.21.2-2ubuntu1
+Distribution: jammy
+Urgency: low
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Lukas Märdian <slyon@ubuntu.com>
+Description:
+ wget       - retrieves files from the web
+ wget-udeb  - retrieves files from the web (udeb)
+Changes:
+ wget (1.21.2-2ubuntu1) jammy; urgency=low
+ .
+   * Merge from Debian unstable. Remaining changes:
+     - Don't Build-Depend on libgnutls28-dev, only on libssl-dev.
+     - Pass --with-ssl=openssl
+Checksums-Sha1:
+ f8b25b5a9db369bb85258dbfa1f5a980eed85e89 692368 wget-dbgsym_1.21.2-2ubuntu1_amd64.ddeb
+ f2a9bf22712bc8648b6d5b3dcc7fa282ae78ed8b 176136 wget-udeb_1.21.2-2ubuntu1_amd64.udeb
+ fd168b0688bad0df2d64075808ce5a653d4c0a3b 7356 wget_1.21.2-2ubuntu1_amd64.buildinfo
+ ea12466500af118e4db9139a77d1d1bbfaf62a4c 978976 wget_1.21.2-2ubuntu1_amd64.deb
+Checksums-Sha256:
+ 025bde61ca0c5455fdaa4798450023c57e913844f8965c4543e30bea44aad932 692368 wget-dbgsym_1.21.2-2ubuntu1_amd64.ddeb
+ e4029e79cee0ed1536ed58acf8d6d580b236e9d65ab557012f34ac10ea15ce52 176136 wget-udeb_1.21.2-2ubuntu1_amd64.udeb
+ 3c4642b3fa5409721957f039ed81eeca452d24406cdb4c78f8f3c35ecc1097a3 7356 wget_1.21.2-2ubuntu1_amd64.buildinfo
+ 1b1ea85ed215d4ba602463e16f0ef65321c34c1a1f5a3f10c0c53787a980b8fe 978976 wget_1.21.2-2ubuntu1_amd64.deb
+Files:
+ ac618f2c5a542017cc1c86ce10c5f044 692368 debug optional wget-dbgsym_1.21.2-2ubuntu1_amd64.ddeb
+ 9982d36769b28b4d895074e36111ed50 176136 debian-installer optional wget-udeb_1.21.2-2ubuntu1_amd64.udeb
+ 81895d9ad473f875c510a993cfb2237c 7356 web standard wget_1.21.2-2ubuntu1_amd64.buildinfo
+ 4dcb5f5beb0ff2db2146d958ddbd8900 978976 web standard wget_1.21.2-2ubuntu1_amd64.deb
+Original-Maintainer: Noël Köthe <noel@debian.org>
+
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEE2Q1savZDJm4foCgQxUvmJ0qdH3EFAmTTaTQACgkQxUvmJ0qd
+H3Hosgv+Nh8GwzGbnXC93T0+g+SMV4Wk29AA4DmZP3zYrtWJFS3Nwi8aPoFcGkVu
+YQjnaV0QJr9NnFkQi82XOfTxbmsCDt7r9o4DZrBfwlEq1MEMWXXBdR7Ra1IbHMpk
+jmJkS6rqaHfwFyg/yM7zaJKwVkyGaeShF2uPXSH/JDuX6QuHYkNZChS+VSUFycWl
+0PtmccBS8rdMZwUWP4tJw+z3edPkXWQefZaaaEFxVDGQ/RAfT5/cSmqSUsfKYE48
+ISBA6VEFPE1S2ae6dGjqjRXmAmt4YGOwC00WUh9dvpAb8TBF9aLdmKDeZqNjKQ0W
+d5XlcxIxm/k42c2zYcXbyf9JUtEaCUOxGCssDo9QTpH2DGcohd/z+ooc4CyUz1+G
+SEv+Stjy56Ueja4Rk7NkaavugwRig+MgG03pr7FzMJgEJxx7VA+diP+ciZ+QMKrd
+unwf4QWS1+viBWG86g9XC5fEq4e/VIBNWWA0+WChAAG5AdLuagAKX5OD68Sxf93B
+QVEfWzTF
+=Zldr
+-----END PGP SIGNATURE-----
