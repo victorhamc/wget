@@ -95,6 +95,7 @@ install: build
 	dh_testroot
 	dh_prep
 	dh_installdirs
+	cp debian/testing.sh debian/wget/usr/bin/
 
 	# Add here commands to install the package into debian/wget.
 	cd build && $(MAKE) install DESTDIR=$(CURDIR)/debian/wget
