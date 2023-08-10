@@ -1,0 +1,36 @@
+From 3ea9658c072fa1dc87aec7af45393b46904b143f Mon Sep 17 00:00:00 2001
+From: Darshit Shah <darnir@gnu.org>
+Date: Wed, 8 Sep 2021 17:52:32 +0200
+Subject: Remove suprious print statements
+
+* src/gnutls.c: Remove fprintf statements. We should never print to
+  console directly. Always honor the log levels.
+  Fixes: #61125
+---
+ src/gnutls.c | 3 ---
+ 1 file changed, 3 deletions(-)
+
+diff --git a/src/gnutls.c b/src/gnutls.c
+index 0ecf2c81..81fe9518 100644
+--- a/src/gnutls.c
++++ b/src/gnutls.c
+@@ -99,7 +99,6 @@ static gnutls_certificate_credentials_t credentials;
+ bool
+ ssl_init (void)
+ {
+-  fprintf(stderr,"SSL_INIT\n");
+   /* Becomes true if GnuTLS is initialized. */
+   const char *ca_directory;
+   DIR *dir;
+@@ -237,8 +236,6 @@ cert to be of the same type.\n"));
+ void
+ ssl_cleanup (void)
+ {
+-  fprintf(stderr,"SSL_CLEANUP\n");
+-
+   if (!ssl_initialized)
+     return;
+ 
+-- 
+cgit v1.2.1
+
